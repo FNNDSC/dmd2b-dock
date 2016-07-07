@@ -2,12 +2,15 @@
 A dock around the dmd2b project.
 
 ## Overview
-This project...
+This project consists on creating a dock for the dmd2b project based on the docker technology.
 
-Here is some code:
+#Get started :
 
+Create an image
 ```
-Cmdline args args2
+docker pull Ubuntu
+docker ps -a
+docker commit "ID_container of Ubuntu" new_internship
 ```
 
 another code:
@@ -15,4 +18,3 @@ another code:
 ```
 c2 -a 1
 ```
-
