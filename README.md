@@ -4,7 +4,7 @@ A dock around the dmd2b project.
 ## Overview
 This project consists on creating a dock for the dmd2b project based on the docker technology.
 
-#Get started :
+# Get started :
 
 Create an image
 ```
@@ -13,8 +13,8 @@ docker ps -a
 docker commit "ID_container of Ubuntu" new_internship
 ```
 
-another code:
-
-```
-c2 -a 1
+Connect to the dock
+ ```
+ docker run -it new_internship
+ # you are inside the dock new_internship
 ```
