@@ -17,17 +17,17 @@ docker commit <ID_container of Ubuntu> new_internship
 The problem with the container is, it is an isolated system so you have to install everything you need and basically the folders you have created with your account.
 ```
 docker run --device /dev/fuse/ --cap-add SYS_ADMIN -v /net:/net -v /neuro:/neuro -it new_internship (you bring two volumes net and neuro)
-# you are inside the dock
+# you are inside the dock new_internship in root
 # addgroup --gid 1102 fnndsc
 # adduser --disabled-password --gecos'' --uid 20064 --gid 1102 (username)
 # su - (username) (you access at your local account with the dock)
 $ cd /neuro/users/yves.verpillieux (you will see all the folders you are created from your account)
 ```
 
-# Connect to the dock
+# Solve the problem of proxy in the dock
  ```
  docker run --device /dev/fuse/ --cap-add SYS_ADMIN -v /net:/net -v /neuro:/neuro -it new_internship
- # you are inside the dock new_internship in root
+ # you are inside the dock
  # export http_proxy="http://192.168.13.14:3128"
  # apt-get upgrade
  # apt-get update
