@@ -16,11 +16,16 @@ docker commit <ID_container of Ubuntu> new_internship
 
 The problem with the container is, it is an isolated system so you have to install everything you need and basically the folders you have created with your account.
 ```
+Before you lauch the dock check your ID (uid)
+
+id
+uid=20064(yves) gid=1102(grantlab_local) groups=1102(grantlab_local),27(sudo),999(docker)
+
 docker run --device /dev/fuse/ --cap-add SYS_ADMIN -v /net:/net -v /neuro:/neuro -it new_internship (you bring two volumes net and neuro)
 # you are inside the dock new_internship in root
 # addgroup --gid 1102 fnndsc
-# adduser --disabled-password --gecos'' --uid 20064 --gid 1102 (username)
-# su - (username) (you access at your local account with the dock)
+# adduser --disabled-password --gecos'' --uid (your ID) --gid 1102 (your username)
+# su - (your username) (you access at your local account with the dock)
 $ cd /neuro/users/yves.verpillieux (you will see all the folders you are created from your account)
 ```
 
