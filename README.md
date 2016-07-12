@@ -39,7 +39,7 @@ $ cd /neuro/users/yves.verpillieux (you will see all the folders you are created
  # apt-get install ...
 ```
 
-# Warning
+# WARNING
 
 Each time you exit the dock you have to commit the dock in order to save what you just installed.
 ```
