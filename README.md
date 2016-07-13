@@ -47,11 +47,15 @@ docker ps -a
 docker commit <ID_container last connexion new_internship> new_internship
 ```
 
-# Install pydicom
+# Install pydicom for python3
 ```
-pip install pydicom
-  or/and
 git clone https://github.com/darcymason/pydicom.git
 cd pydicom
-python setup.py install
+python3 setup.py install
+```
+
+# Install dicom for python3
+```
+sudo apt-get update
+sudo apt-get install python3-dicom
 ```
