@@ -53,6 +53,7 @@ git clone https://github.com/darcymason/pydicom.git
 cd pydicom
 python3 setup.py install
 ```
+Not forget to put the pydicom's folder in the same repository than the program folder
 
 # Install dicom for python3
 ```
