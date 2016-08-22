@@ -4,7 +4,7 @@ Create a dock around the dmd2b project. The big advantage about dock is that you
 ## Overview
 This project consists on creating a dock for the dmd2b project based on the docker technology.
 
-# Get started 
+# Get started
 
 ##Create an image from ubuntu dock
 
@@ -43,6 +43,9 @@ ubuntu              latest              0f192147631d        7 weeks ago         
 Then, run the ubuntu latest image in order to get the ID container and build your own image :
 ```
 sudo docker run -it ubuntu
+#(you are inside the dock)
+#exit
+
 sudo docker ps -a
 CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                    PORTS   NAMES    
 9093de564bf9        ubuntu              "/bin/bash"         7 seconds ago       Exited (0) 2 seconds ago           tiny_boyd
