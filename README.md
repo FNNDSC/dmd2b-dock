@@ -4,7 +4,7 @@ Create a dock around the dmd2b project. The big advantage about dock is that you
 ## Overview
 This project consists on creating a dock for the dmd2b project based on the docker technology.
 
-# Get started :
+# Get started 
 
 ##Create an image from ubuntu dock
 
