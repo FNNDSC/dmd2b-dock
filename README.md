@@ -37,6 +37,7 @@ sudo docker images
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
 ubuntu              latest              0f192147631d        7 weeks ago         132.8 MB
 ```
+
 Then, run the ubuntu latest image in order to get the ID container :
 ```
 sudo docker run -it ubuntu
@@ -49,12 +50,15 @@ sudo docker commit <ID_container of Ubuntu> new_internship
 # Bring folders from an outside system inside the dock
 
 The problem with the container is, it is an isolated system so you have to install everything you need and basically the folders you have created with your account.
-```
-Before you lauch the dock check your ID (uid)
 
+Before you lauch the dock check your ID (uid)
+```
 id
 uid=20064(yves) gid=1102(grantlab_local) groups=1102(grantlab_local),27(sudo),999(docker)
+```
 
+Then, check your uid (20064) and your username (yves)
+```
 sudo docker run --device /dev/fuse/ --cap-add SYS_ADMIN -v /net:/net -v /neuro:/neuro -it new_internship (you bring two volumes net and neuro)
 # you are inside the dock new_internship in root
 # addgroup --gid 1102 fnndsc
