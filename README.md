@@ -62,7 +62,7 @@ Then, do the following commands
 sudo docker run --device /dev/fuse/ --cap-add SYS_ADMIN -v /net:/net -v /neuro:/neuro -it new_internship (you bring two volumes net and neuro)
 #(you are inside the dock new_internship in root)
 # addgroup --gid 1102 fnndsc
-# adduser --disabled-password --gecos'' --uid (your ID) --gid 1102 (your username)
+# adduser --disabled-password --gecos'' --uid (your uid) --gid 1102 (your username)
 # su - (your username) (you access at your local account with the dock)
 $ cd /neuro/users/yves.verpillieux (you will see all the folders you are created from your account)
 ```
