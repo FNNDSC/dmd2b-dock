@@ -6,17 +6,19 @@ This project consists on creating a dock for the dmd2b project based on the dock
 
 # Get started :
 
-Create an image from Ubuntu dock.
+##Create an image from ubuntu dock
+
+First at all, after installed Docker on your machine you have to activate the service docker:
 ```
 sudo service docker start
 ```
 
-Then, pull the latest ubuntu image:
+Then, pull the latest ubuntu image :
 ```
 sudo docker pull ubuntu
 ```
 
-which will result in something like:
+which will result in something like :
 ```
 sudo docker pull ubuntu
 
@@ -30,7 +32,7 @@ Digest: sha256:8e2324f2288c26e1393b63e680ee7844202391414dbd48497e9a4fd997cd3cbf
 Status: Downloaded newer image for ubuntu:latest
 ```
 
-you can check if the image was well pulled
+you can check if the image was well pulled :
 ```
 sudo docker images
 
@@ -38,7 +40,7 @@ REPOSITORY          TAG                 IMAGE ID            CREATED             
 ubuntu              latest              0f192147631d        7 weeks ago         132.8 MB
 ```
 
-Then, run the ubuntu latest image in order to get the ID container and build your own image:
+Then, run the ubuntu latest image in order to get the ID container and build your own image :
 ```
 sudo docker run -it ubuntu
 sudo docker ps -a
@@ -51,7 +53,7 @@ sudo docker commit <ID_container of Ubuntu> new_internship
 
 The problem with the container is, it is an isolated system so you have to install everything you need and basically the folders you have created with your account.
 
-Before you lauch the dock check your uid (20064) and your username (yves)
+Before you lauch the dock check your uid (20064) and your username (yves) :
 ```
 id
 uid=20064(yves) gid=1102(grantlab_local) groups=1102(grantlab_local),27(sudo),999(docker)
