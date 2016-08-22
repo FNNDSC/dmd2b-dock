@@ -1,5 +1,5 @@
 # dmd2b-dock
-Create a dock around the dmd2b project.
+Create a dock around the dmd2b project. The big advantage about dock is that you can run it from whatever machine you want but she has to get "Docker"
 
 ## Overview
 This project consists on creating a dock for the dmd2b project based on the docker technology.
