@@ -17,13 +17,33 @@ sudo docker pull ubuntu
 ```
 
 which will result in something like:
-
 ```
-docker pull Ubuntu
+sudo docker pull ubuntu
 
+Using default tag: latest
+latest: Pulling from library/ubuntu
+2f0243478e1f: Pull complete 
+d8909ae88469: Pull complete 
+820f09abed29: Pull complete 
+01193a8f3d88: Pull complete 
+Digest: sha256:8e2324f2288c26e1393b63e680ee7844202391414dbd48497e9a4fd997cd3cbf
+Status: Downloaded newer image for ubuntu:latest
 ```
 
+you can check if the image was well pulled 
+```
+sudo docker images
+
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+ubuntu              latest              0f192147631d        7 weeks ago         132.8 MB
+```
+Then, run the ubuntu latest image in order to get the ID container :
+```
+sudo docker run -it ubuntu
 sudo docker ps -a
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                    PORTS    NAMES    
+9093de564bf9        ubuntu              "/bin/bash"         7 seconds ago       Exited (0) 2 seconds ago           tiny_boyd 
+
 sudo docker commit <ID_container of Ubuntu> new_internship
 ```
 # Bring folders from an outside system inside the dock
