@@ -60,7 +60,7 @@ uid=20064(yves) gid=1102(grantlab_local) groups=1102(grantlab_local),27(sudo),99
 Then, check your uid (20064) and your username (yves)
 ```
 sudo docker run --device /dev/fuse/ --cap-add SYS_ADMIN -v /net:/net -v /neuro:/neuro -it new_internship (you bring two volumes net and neuro)
-# you are inside the dock new_internship in root
+#(you are inside the dock new_internship in root)
 # addgroup --gid 1102 fnndsc
 # adduser --disabled-password --gecos'' --uid (your ID) --gid 1102 (your username)
 # su - (your username) (you access at your local account with the dock)
