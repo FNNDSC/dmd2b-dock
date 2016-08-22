@@ -38,7 +38,7 @@ REPOSITORY          TAG                 IMAGE ID            CREATED             
 ubuntu              latest              0f192147631d        7 weeks ago         132.8 MB
 ```
 
-Then, run the ubuntu latest image in order to get the ID container :
+Then, run the ubuntu latest image in order to get the ID container and build your own image:
 ```
 sudo docker run -it ubuntu
 sudo docker ps -a
