@@ -65,7 +65,7 @@ uid=20064(yves) gid=1102(grantlab_local) groups=1102(grantlab_local),27(sudo),99
 Then, do the following commands :
 ```
 sudo docker run --device /dev/fuse/ --cap-add SYS_ADMIN -v /net:/net -v /neuro:/neuro -it new_internship (you bring two volumes net and neuro)
-#(you are inside the dock new_internship in root)
+# (you are inside the dock new_internship in root)
 # addgroup --gid 1102 fnndsc
 # adduser --disabled-password --gecos'' --uid (your uid) --gid 1102 (your username)
 # su - (your username) (you access at your local account with the dock)
@@ -75,7 +75,7 @@ $ cd /neuro/users/yves.verpillieux (you will see all the folders you are created
 # Solve the problem of proxy in the dock
  ```
  sudo docker run --device /dev/fuse/ --cap-add SYS_ADMIN -v /net:/net -v /neuro:/neuro -it new_internship
- # you are inside the dock
+ # (you are inside the dock)
  # export http_proxy="http://192.168.13.14:3128"
  # apt-get upgrade
  # apt-get update
