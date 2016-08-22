@@ -8,9 +8,10 @@ This project consists on creating a dock for the dmd2b project based on the dock
 
 Create an image from Ubuntu dock.
 ```
-docker pull Ubuntu
-docker ps -a
-docker commit <ID_container of Ubuntu> new_internship
+sudo service docker start
+sudo docker pull Ubuntu
+sudo docker ps -a
+sudo docker commit <ID_container of Ubuntu> new_internship
 ```
 # Bring folders from an outside system inside the dock
 
