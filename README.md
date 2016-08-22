@@ -1,5 +1,5 @@
 # dmd2b-dock
-Create a dock around the dmd2b project. The big advantage about dock is that you can run it from whatever machine you want but she has to get "Docker"
+Create a dock around the dmd2b project. The big advantage about dock is that you can run it from whatever machine you want but she has to get "Docker".
 
 ## Overview
 This project consists on creating a dock for the dmd2b project based on the docker technology.
@@ -57,7 +57,7 @@ id
 uid=20064(yves) gid=1102(grantlab_local) groups=1102(grantlab_local),27(sudo),999(docker)
 ```
 
-Then, do the following commands
+Then, do the following commands :
 ```
 sudo docker run --device /dev/fuse/ --cap-add SYS_ADMIN -v /net:/net -v /neuro:/neuro -it new_internship (you bring two volumes net and neuro)
 #(you are inside the dock new_internship in root)
