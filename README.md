@@ -8,7 +8,7 @@ This project consists on creating a dock for the dmd2b project based on the dock
 
 ##Create an image from ubuntu dock
 
-First at all, after installed Docker on your machine you have to activate the service docker:
+First at all, after installed Docker on your machine you have to activate the service docker :
 ```
 sudo service docker start
 ```
