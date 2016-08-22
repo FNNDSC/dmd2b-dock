@@ -44,8 +44,8 @@ $ cd /neuro/users/yves.verpillieux (you will see all the folders you are created
 
 Each time you exit the dock you have to commit the dock in order to save what you just installed.
 ```
-docker ps -a
-docker commit <ID_container last connexion new_internship> new_internship
+sudo docker ps -a
+sudo docker commit <ID_container last connexion new_internship> new_internship
 ```
 
 # Install pydicom for python3
