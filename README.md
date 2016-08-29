@@ -52,6 +52,7 @@ CONTAINER ID        IMAGE               COMMAND             CREATED             
 
 sudo docker commit <ID_container of Ubuntu> new_internship
 ```
+
 # Bring folders from an outside system inside the dock
 
 The problem with the container is, it is an isolated system so you have to install everything you need and basically the folders you have created with your account.
@@ -70,6 +71,13 @@ sudo docker run --device /dev/fuse/ --cap-add SYS_ADMIN -v /net:/net -v /neuro:/
 # adduser --disabled-password --gecos'' --uid (your uid) --gid 1102 (your username)
 # su - (your username) (you access at your local account with the dock)
 $ cd /neuro/users/yves.verpillieux (you will see all the folders you are created from your account)
+```
+
+After that, you can do only these followings commands:
+```
+sudo docker run --device /dev/fuse/ --cap-add SYS_ADMIN -v /net:/net -v /neuro:/neuro -it internship
+# su - (your username)
+# cd /neuro/users/(your folder)
 ```
 
 # Solve the problem of proxy in the dock
