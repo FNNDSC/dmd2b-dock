@@ -46,17 +46,3 @@ Each time you exit the dock you have to commit the dock in order to save what yo
 docker ps -a
 docker commit <ID_container last connexion new_internship> new_internship
 ```
-
-# Install pydicom for python3
-```
-git clone https://github.com/darcymason/pydicom.git
-cd pydicom
-python3 setup.py install
-```
-Not forget to put the pydicom's folder in the same repository than the program folder
-
-# Install dicom for python3
-```
-sudo apt-get update
-sudo apt-get install python3-dicom
-```
