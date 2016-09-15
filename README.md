@@ -48,7 +48,7 @@ sudo docker run -it ubuntu
 
 sudo docker ps -a
 CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                    PORTS   NAMES    
-9093de564bf9        ubuntu              "/bin/bash"         7 seconds ago       Exited (0) 2 seconds ago           tiny_boyd
+9093de564bf9        ubuntu              "/bin/bash"         7 seconds ago       Exited (0) 2 seconds ago          tiny_boyd
 
 sudo docker commit <ID_container of Ubuntu> new_internship
 ```
@@ -95,5 +95,8 @@ sudo docker run --device /dev/fuse/ --cap-add SYS_ADMIN -v /net:/net -v /neuro:/
 Each time you exit the dock you have to commit the dock in order to save what you just installed.
 ```
 sudo docker ps -a
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                    PORTS   NAMES    
+9093de564bf9        ubuntu              "/bin/bash"         7 seconds ago       Exited (0) 2 seconds ago          tiny_boyd
+
 sudo docker commit <ID_container last connexion new_internship> new_internship
 ```
